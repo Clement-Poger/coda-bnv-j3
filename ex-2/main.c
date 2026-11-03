@@ -2,7 +2,7 @@
 
 int main() {
     char op;
-    printf("Choose an Operation Symbol among +, -, *, /: ");
+    printf("Choose an Operation Symbol among +, -, *, /, %: ");
     scanf("%c", &op);
     if (op == 43) {
         printf("\nYou choose addition.\n");
@@ -12,6 +12,8 @@ int main() {
         printf("\nYou choose multiplication.\n");
     } else if (op == 47) {
         printf("\nYou choose division.\n");
+    } else if (op == 37) {
+        printf("\nYou choose modulo.\n");
     } else {
         printf("\nUnknown symbol. Please repeat.\n");
         main();
